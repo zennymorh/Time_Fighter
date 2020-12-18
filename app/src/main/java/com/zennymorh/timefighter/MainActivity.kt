@@ -8,6 +8,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.animation.AnimationUtils
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -59,7 +60,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showInfo() {
+        val dialogTitle = getString(R.string.aboutTitle)
+        val dialogMessage = getString(R.string.aboutMessage)
 
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(dialogTitle)
+        builder.setMessage(dialogMessage)
+        builder.create().show()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

@@ -5,4 +5,6 @@
     <string name="tapMe">Tap Me</string>
     <string name="gameOverMessage">Times Up! Your score was: %1$d</string>
     <string name="About_Menu">About</string>
+    <string name="aboutTitle">TIme Fighter</string>
+    <string name="aboutMessage">Created by Zennymorh</string>
 </resources>
